@@ -70,28 +70,39 @@ def test_create_account():
 
 **Fig. 5** Image of Code Running
 
-# Quiz036:
+# Quiz038:
  ## Question:
 
- **Fig. 3** Image of question of Quiz 036
+ **Fig. 6** Image of question of Quiz 038
  ## Answer:
  ```.py
-class Convert:
-    def __init__(self):
-        self.roman_symbols={1:"I",4:"IV",5:"V",9:"IX",10:"X",49:"IL",50:"L",90:"XC",100:"C"}
+class CompoundInterest:
+    def __init__(self,principal,rate, number_of_years):
+        self.principal = principal
+        self.rate = rate
+        self.number_of_years=number_of_years
 
-    def convert_to_roman(self,decimal:int)->str:
-        if decimal > 0 and decimal < 101:
-            output = ""
-            for k,v in self.roman_symbols.items():
-                q = decimal//k
-                output += q * v
-                decimal = decimal % k
+    def calculate(self):
+        output = self.principal*((1+self.rate)**self.number_of_years)
         return output
 
+class Accounting(CompoundInterest):
+    def __init__(self, customer_name, customer_email, principal, rate, number_of_years):
+        super().__init__(principal, rate, number_of_years)
+        self.customer_name = customer_name
+        self.customer_email = customer_email
 
-print(roman_number.convert_to_roman())
+    def get_msg(self):
+        return (f"{self.customer_name} will have {self.calculate()} in {self.number_of_years}years if the principal is {self.principal}USD with {self.rate}% annual compound interest.")
+
+personA = CompoundInterest(100,0.5,10)
+personA = Accounting("A","A@zxy",100,0.5,10)
+message = personA.get_msg()
+print(message)
  ```
+**Fig. 7** Image of written code
 
  ## Running Code:
-N/A
+<img width="1123" alt="Screen Shot 2024-01-15 at 8 59 29" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/b7797a6c-5211-4574-8679-a72f5349aa21">
+
+**Fig. 8** Image of code running
