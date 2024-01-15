@@ -100,6 +100,9 @@ personA = Accounting("A","A@zxy",100,0.5,10)
 message = personA.get_msg()
 print(message)
  ```
+<img width="471" alt="Screen Shot 2024-01-15 at 9 00 31" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/11a51399-efcb-4695-9f6a-803ab2cc5dcb">
+
+
 **Fig. 7** Image of written code
 
  ## Running Code:
