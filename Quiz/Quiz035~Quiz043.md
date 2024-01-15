@@ -17,6 +17,29 @@ def mystery(list1=list, list2 = list):
 **Fig. 2** Image of answer of Quiz 035
  ## Running Code:
  N/A
+ # Quiz036:
+ ## Question:
+<img width="1060" alt="Screen Shot 2024-01-15 at 9 01 48" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/585a53cb-928e-4963-a216-666a1dcae4bd">
+**Fig. 3** Image of question of Quiz 036
+
+## Answer
+```.py
+class Convert:
+    def __init__(self):
+        self.roman_symbols={1:"I",4:"IV",5:"V",9:"IX",10:"X",49:"IL",50:"L",90:"XC",100:"C"}
+
+    def convert_to_roman(self,decimal:int)->str:
+        if decimal > 0 and decimal < 101:
+            output = ""
+            for k,v in self.roman_symbols.items():
+                q = decimal//k
+                output += q * v
+                decimal = decimal % k
+        return output
+
+
+print(roman_number.convert_to_roman())
+```
 
 # Quiz037:
  ## Question:
