@@ -1,5 +1,6 @@
-# Quiz035:
+# Quiz034:
  ## Question:
+<img width="1079" alt="Screen Shot 2024-01-15 at 9 03 21" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/9c53f76a-81bb-4c34-b40b-1fb63c7f70ec">
 
 **Fig. 1** Image of question of Quiz 035
  ## Answer:
@@ -14,13 +15,13 @@ def mystery(list1=list, list2 = list):
 
 <img width="988" alt="Screen Shot 2024-01-08 at 8 28 11" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/ecefa997-453b-436d-941a-9a44a6d7422a">
 
-**Fig. 2** Image of answer of Quiz 035
+**Fig. 2** Image of answer of Quiz 034
  ## Running Code:
  N/A
- # Quiz036:
+ # Quiz035:
  ## Question:
 <img width="1060" alt="Screen Shot 2024-01-15 at 9 01 48" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/585a53cb-928e-4963-a216-666a1dcae4bd">
-**Fig. 3** Image of question of Quiz 036
+**Fig. 3** Image of question of Quiz 035
 
 ## Answer
 ```.py
@@ -41,10 +42,11 @@ class Convert:
 print(roman_number.convert_to_roman())
 ```
 
-# Quiz037:
+# Quiz036:
  ## Question:
+ <img width="1076" alt="Screen Shot 2024-01-15 at 9 03 37" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/b3ef12cd-99b2-4011-9cb7-e679fdf1f42a">
 
- **Fig. 4** Image of question of Quiz 037
+ **Fig. 4** Image of question of Quiz 036
  ## Answer:
  ```.py
 class Account:
@@ -93,10 +95,11 @@ def test_create_account():
 
 **Fig. 5** Image of Code Running
 
-# Quiz038:
+# Quiz037:
  ## Question:
+<img width="1062" alt="Screen Shot 2024-01-15 at 9 03 56" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1b0532a4-5548-416e-8514-7924c23ff667">
 
- **Fig. 6** Image of question of Quiz 038
+ **Fig. 6** Image of question of Quiz 037
  ## Answer:
  ```.py
 class CompoundInterest:
