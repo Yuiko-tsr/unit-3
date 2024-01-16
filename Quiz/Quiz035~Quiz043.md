@@ -44,7 +44,6 @@ print(roman_number.convert_to_roman())
 
 # Quiz036:
  ## Question:
- <img width="1076" alt="Screen Shot 2024-01-15 at 9 03 37" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/b3ef12cd-99b2-4011-9cb7-e679fdf1f42a">
 <img width="1060" alt="Screen Shot 2024-01-15 at 9 01 48" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/585a53cb-928e-4963-a216-666a1dcae4bd">
 
  **Fig. 4** Image of question of Quiz 036
