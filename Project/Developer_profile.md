@@ -4,6 +4,7 @@ Yuiko Tsuruno
 # Skills:
 * Time management (Fast completition of your object so you don't have to stress)
 * Motivation
+* Python for a few months at ISAK
 * I speak Japanese and English
 * I love sweets and I can eat for hours
 
