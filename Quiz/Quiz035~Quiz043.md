@@ -135,3 +135,42 @@ print(message)
 <img width="1123" alt="Screen Shot 2024-01-15 at 8 59 29" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/b7797a6c-5211-4574-8679-a72f5349aa21">
 
 **Fig. 8** Image of code running
+
+# Quiz 038
+## Question
+**Fig. 9** Image of question
+
+## Answer
+```.py
+import random
+import matplotlib.pyplot as plt
+
+class SalemanMap:
+    def __init__(self):
+        self.x = []
+        self.y = []
+        self.name = []
+
+    def generate_data(self, names: list[int]):
+        self.name = names
+
+    def get_map(self):
+        self.x = [random.randint(1, 100) for x in range(len(self.name))]
+        self.y = [random.randint(1, 100) for x in range(len(self.name))]
+        for n in range(len(self.name)):
+            plt.scatter(self.x[n], self.y[n], label=self.name[n])
+        plt.legend()
+        plt.xlabel('Distance (km)')
+        plt.ylabel('Distance(km)')
+        plt.show()
+
+test = SalemanMap()
+test.generate_data(["kobe","tokyo","nagano","kyoto","saitama","yokohama"])
+test.get_map()
+
+```
+
+## Running Code:
+<img width="364" alt="Screen Shot 2024-01-17 at 10 02 46" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/71615055-c632-47eb-a790-de62294ca069">
+
+**Fig. 10** Image of code running.
