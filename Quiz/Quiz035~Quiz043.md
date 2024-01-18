@@ -174,3 +174,59 @@ test.get_map()
 <img width="364" alt="Screen Shot 2024-01-17 at 10 02 46" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/71615055-c632-47eb-a790-de62294ca069">
 
 **Fig. 10** Image of code running.
+
+# Quiz039
+## Question
+
+**Fig. 11** Image of quiz question
+
+## Answer
+```.py
+from kivymd.app import MDApp
+
+class Quiz040(MDApp):
+    def build(self):
+        self.number = 0
+        print("opening app")
+        return
+
+    def add_count(self):
+        count = self.root.ids.my_counter
+        self.number += 1
+        count.text = f"Count {self.number}"
+
+
+text = Quiz040()
+text.run()
+```
+```.kv
+Screen:
+    size: 500,500
+
+    MDBoxLayout:
+        pos_hint:{"center_x":0.5, "center_y":0.5}
+        orientation: "horizontal"
+        size_hint: .7,.3
+
+        MDLabel:
+            id: my_counter
+            text: "Count 0"
+            size_hint: 1.0,0.5
+            font_size:"34 pt"
+            md_bg_color: "red"
+
+        MDRaisedButton:
+            id: my_adder
+            size_hint: 1.0,0.5
+            font_size: "34 pt"
+            text: "Add +1"
+            md_bg_color: "#003049"
+            on_press:
+                app.add_count()
+
+```
+
+## Running Code
+<img width="761" alt="Screen Shot 2024-01-18 at 15 39 45" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/7ad7e6dc-f656-40e0-ac91-c1cca97a29f4">
+
+**Fig. 12** Image of code running
