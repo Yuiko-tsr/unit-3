@@ -230,3 +230,55 @@ Screen:
 <img width="761" alt="Screen Shot 2024-01-18 at 15 39 45" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/7ad7e6dc-f656-40e0-ac91-c1cca97a29f4">
 
 **Fig. 12** Image of code running
+
+# Quiz 042
+## Question
+
+**Fig. 13** Image of question
+
+## Answer
+```.py
+from kivy.core.window import Window
+from kivymd.app import MDApp
+from kivymd.uix.screen import MDScreen
+
+class MysteryPageA(MDScreen):
+    pass
+class MysteryPageB(MDScreen):
+    pass
+class mystery(MDApp):
+    def build(self):
+        Window.size = (400,700)
+
+t = mystery()
+t.run()
+```
+```.py
+ScreenManager:
+    MysteryPageA:
+        name:"MysteryPageA"
+
+    MysteryPageB:
+        name: "MysteryPageB"
+
+<MysteryPageA>:
+    MDLabel:
+        text: "This is Mystery Page A"
+    MDRaisedButton:
+        text: "Next"
+        style: "standard"
+        on_press:
+            root.parent.current = "MysteryPageB"
+<MysteryPageB>:
+    MDLabel:
+        text: "This is Mystery Page B. You pressed the button"
+    MDRaisedButton:
+        text: "Back"
+        on_press:
+            root.parent.current = "MysteryPageA"
+```
+
+## Code Running
+https://github.com/Yuiko-tsr/unit-3/assets/134657923/ee0756b3-f21e-4cff-819e-edbc590a1acb
+
+**Fig. 14** Image of code running
