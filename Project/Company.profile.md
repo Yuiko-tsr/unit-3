@@ -2,7 +2,7 @@
 
 **Fig. 1** Stuffed Animals
 
-# Company Name:
+# Company Name: (Developed by Keeler)
 Happy Stuffed Animals 
 
 # Company Discription
