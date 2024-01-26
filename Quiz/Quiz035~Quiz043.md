@@ -281,7 +281,7 @@ Screen:
 ```
 
 ## Code Running
-<img width="746" alt="Screen Shot 2024-01-26 at 12 52 57" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/00b44201-49bc-4ef5-ae8d-c4b64e10a7e8">
+<img width="402" alt="Screen Shot 2024-01-26 at 12 54 38" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d2a9bae8-733a-46e3-9925-29678e435d4c">
 
 
 # Quiz 041
@@ -289,76 +289,56 @@ Screen:
 
 ## Answer
 ```.py
-Screen:
-    size: 500,500
+ScreenManager:
+    FirstScreen:
+        name:"First"
 
-    MDBoxLayout:
-        size_hint: .8, .8
-        pos_hint: {"center_x":.5, "center_y":.5}
-        orientation:"vertical"
+    SecondScreen:
+        name: "Second"
 
-        MDLabel:
-            text: "X_player's turn"
-            font_size: "24pt"
-            halign: "center"
+<FirstScreen>:
+    MDLabel:
+        text: "This is the First Screen"
+    MDFloatingActionButton:
+        icon: "pencil-outline"
+        style: "standard"
+        on_press:
+            root.try_change()
+            app.changed()
 
-        MDBoxLayout:
-            orientation:"horizontal"
-            size_hint: 1,.25
-            md_bg_color:"white"
-            MyButton:
-            MyButton:
-            MyButton:
+<SecondScreen>:
+    MDLabel:
+        text: "This is the Second Screen"
+    MDFloatingActionButton:
+        icon: "pencil-outline"
+        style: "standard"
+        on_press:
+            root.parent.current = "First"
 
-        MDBoxLayout:
-            orientation:"horizontal"
-            size_hint: 1,.25
-            md_bg_color:"yellow"
-            MyButton:
-            MyButton:
-            MyButton:
-        MDBoxLayout:
-            orientation:"horizontal"
-            size_hint: 1,.25
-            md_bg_color:"white"
-            MyButton:
-            MyButton:
-            MyButton:
-        MDBoxLayout:
-            orientation:"horizontal"
-            size_hint: 1,.25
-            md_bg_color:"yellow"
-            MyButton:
-            MyButton:
-            MyButton:
-<MyButton>:
-    size_hint: 1,1
-    md_bg_color:"red"
-    color:"white"
-    on_press:
-        app.button_pressed(self)
+
 ```
 ```.py
-from kivymd.app import MDApp
 from kivy.core.window import Window
-from kivymd.uix.button import MDFlatButton
+from kivymd.app import MDApp
+from kivymd.uix.screen import MDScreen
 
-
-class MyButton(MDFlatButton):
+class FirstScreen(MDScreen):
+    def try_change(self):
+        self.parent.current = "Second"
+class SecondScreen(MDScreen):
     pass
-class Quiz041(MDApp):
+class MultipleScreen(MDApp):
     def build(self):
-        Window.size = (500,500)
-        pass
-    def button_pressed(self, btn):
-        btn.text = "pressed"
-        btn.md_bg_color = [0.2,0.3,0.5,1]
+        Window.size = (400,700)
+    def changed(self):
+        print("page was changed")
 
-test = Quiz041()
-test.run()
+t = MultipleScreen()
+t.run()
 ```
 
 # Code Running
+
 <img width="503" alt="Screen Shot 2024-01-26 at 12 51 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/00a48bde-0ef7-4856-8efd-9841e40a022e">
 **Fig. 14** Image of Code Running
 
