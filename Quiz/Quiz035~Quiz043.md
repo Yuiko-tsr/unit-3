@@ -236,59 +236,6 @@ Screen:
 
 ## Answer
 ```.py
-from kivymd.app import MDApp
-
-class Quiz040(MDApp):
-    def build(self):
-        self.number = 0
-        print("opening app")
-        return
-
-    def add_count(self):
-        count = self.root.ids.my_counter
-        self.number += 1
-        count.text = f"Count {self.number}"
-
-
-text = Quiz040()
-text.run()
-```
-```.py
-Screen:
-    size: 500,500
-
-    MDBoxLayout:
-        pos_hint:{"center_x":0.5, "center_y":0.5}
-        orientation: "horizontal"
-        size_hint: .7,.3
-
-        MDLabel:
-            id: my_counter
-            text: "Count 0"
-            size_hint: 1.0,0.5
-            font_size:"34 pt"
-            md_bg_color: "red"
-
-        MDRaisedButton:
-            id: my_adder
-            size_hint: 1.0,0.5
-            font_size: "34 pt"
-            text: "Add +1"
-            md_bg_color: "#003049"
-            on_press:
-                app.add_count()
-
-```
-
-## Code Running
-<img width="402" alt="Screen Shot 2024-01-26 at 12 54 38" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d2a9bae8-733a-46e3-9925-29678e435d4c">
-
-
-# Quiz 041
-## Question
-
-## Answer
-```.py
 ScreenManager:
     FirstScreen:
         name:"First"
@@ -337,9 +284,88 @@ t = MultipleScreen()
 t.run()
 ```
 
+## Code Running
+<img width="402" alt="Screen Shot 2024-01-26 at 12 54 38" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d2a9bae8-733a-46e3-9925-29678e435d4c">
+
+
+# Quiz 041
+## Question
+
+## Answer
+```.py
+from kivymd.app import MDApp
+from kivy.core.window import Window
+from kivymd.uix.button import MDFlatButton
+
+
+class MyButton(MDFlatButton):
+    pass
+class Quiz041(MDApp):
+    def build(self):
+        Window.size = (500,500)
+        pass
+    def button_pressed(self, btn):
+        btn.text = "pressed"
+        btn.md_bg_color = [0.2,0.3,0.5,1]
+
+test = Quiz041()
+test.run()
+```
+```.py
+Screen:
+    size: 500,500
+
+    MDBoxLayout:
+        size_hint: .8, .8
+        pos_hint: {"center_x":.5, "center_y":.5}
+        orientation:"vertical"
+
+        MDLabel:
+            text: "X_player's turn"
+            font_size: "24pt"
+            halign: "center"
+
+        MDBoxLayout:
+            orientation:"horizontal"
+            size_hint: 1,.25
+            md_bg_color:"white"
+            MyButton:
+            MyButton:
+            MyButton:
+
+        MDBoxLayout:
+            orientation:"horizontal"
+            size_hint: 1,.25
+            md_bg_color:"yellow"
+            MyButton:
+            MyButton:
+            MyButton:
+        MDBoxLayout:
+            orientation:"horizontal"
+            size_hint: 1,.25
+            md_bg_color:"white"
+            MyButton:
+            MyButton:
+            MyButton:
+        MDBoxLayout:
+            orientation:"horizontal"
+            size_hint: 1,.25
+            md_bg_color:"yellow"
+            MyButton:
+            MyButton:
+            MyButton:
+<MyButton>:
+    size_hint: 1,1
+    md_bg_color:"red"
+    color:"white"
+    on_press:
+        app.button_pressed(self)
+```
+
 # Code Running
 
 <img width="503" alt="Screen Shot 2024-01-26 at 12 51 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/00a48bde-0ef7-4856-8efd-9841e40a022e">
+
 **Fig. 14** Image of Code Running
 
 # Quiz 042
