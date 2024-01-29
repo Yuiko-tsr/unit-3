@@ -42,6 +42,10 @@ class Convert:
 print(roman_number.convert_to_roman())
 ```
 
+<img width="536" alt="Screen Shot 2024-01-29 at 11 36 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1b3b1466-a1f3-4628-9b15-ceb0fd76eaed">
+
+**Fig** UML diagram
+
 # Quiz036:
  ## Question:
 <img width="1060" alt="Screen Shot 2024-01-15 at 9 01 48" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/585a53cb-928e-4963-a216-666a1dcae4bd">
@@ -89,6 +93,10 @@ def test_create_account():
     assert new_a.set_holder_email(email="bob@xy.z") == "Holder's email is bob@xy.z"
     assert new_a.deposit(amount=100)== "New balance: 100 USD"
  ```
+
+![Uploading Screen Shot 2024-01-29 at 11.37.09.png…]()
+
+**Fig** UML diagram
 
  ## Running Code:
 <img width="987" alt="Screen Shot 2024-01-15 at 8 58 12" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d7879c8e-98fa-4bf3-b40f-01f7a2cf6d42">
