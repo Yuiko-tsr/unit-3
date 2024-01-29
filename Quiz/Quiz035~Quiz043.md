@@ -299,6 +299,10 @@ t = MultipleScreen()
 t.run()
 ```
 
+<img width="717" alt="Screen Shot 2024-01-29 at 11 38 47" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/07fd6cab-efaf-440d-86f2-b623234827a3">
+
+**Fig** UML diagram
+
 ## Code Running
 <img width="402" alt="Screen Shot 2024-01-26 at 12 54 38" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d2a9bae8-733a-46e3-9925-29678e435d4c">
 
@@ -376,6 +380,10 @@ Screen:
     on_press:
         app.button_pressed(self)
 ```
+
+![Uploading Screen Shot 2024-01-29 at 11.39.01.png…]()
+
+**Fig** UML diagram
 
 # Code Running
 
