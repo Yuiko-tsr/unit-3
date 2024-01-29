@@ -241,6 +241,10 @@ Screen:
 
 ```
 
+<img width="594" alt="Screen Shot 2024-01-29 at 11 39 54" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/70869b6f-2fce-456d-9fa1-751518d9a233">
+
+**Fig** UML diagram
+
 ## Running Code
 <img width="761" alt="Screen Shot 2024-01-18 at 15 39 45" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/7ad7e6dc-f656-40e0-ac91-c1cca97a29f4">
 
@@ -437,6 +441,10 @@ ScreenManager:
         on_press:
             root.parent.current = "MysteryPageA"
 ```
+
+<img width="730" alt="Screen Shot 2024-01-29 at 11 39 36" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/0adabf4a-2420-42cf-9455-6eaefcd93ad4">
+
+**Fig** UML diagram
 
 ## Code Running
 https://github.com/Yuiko-tsr/unit-3/assets/134657923/ee0756b3-f21e-4cff-819e-edbc590a1acb
