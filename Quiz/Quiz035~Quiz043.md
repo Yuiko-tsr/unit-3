@@ -94,7 +94,8 @@ def test_create_account():
     assert new_a.deposit(amount=100)== "New balance: 100 USD"
  ```
 
-![Uploading Screen Shot 2024-01-29 at 11.37.09.png…]()
+<img width="517" alt="Screen Shot 2024-01-29 at 11 41 25" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/a8d3692d-05a2-4ed3-a0c0-cb02cd9a3a65">
+
 
 **Fig** UML diagram
 
@@ -385,7 +386,7 @@ Screen:
         app.button_pressed(self)
 ```
 
-![Uploading Screen Shot 2024-01-29 at 11.39.01.png…]()
+<img width="355" alt="Screen Shot 2024-01-29 at 11 40 53" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/85e5a11b-9e40-49a8-9019-b3bd0d337ef5">
 
 **Fig** UML diagram
 
