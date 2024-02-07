@@ -22,3 +22,8 @@ A clear and easy UI that allows the client to track budget, orders and resources
 7. Customer login system that has limited menu according to allergy
 
 # Appendix A:
+
+![IMG_5F4D6C5EA6A5-1](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9853dab7-5639-4b18-84a0-9289ec571e91)
+
+**FIG** Meeting Notes from First Meeting 
+(Includes Problem and requirements)
