@@ -13,19 +13,10 @@ A clear and easy UI that allows the client to track budget, orders and resources
 ``` Fill out here```
 
 ## Success Criteria
-
-[^1]: Track Budget/Revenue
-[^2]: 
-[^3]:“How to Connect dht11 Sensor with Arduino Uno.” Arduino Project Hub, https://create.arduino.cc/projecthub/pibots555/how-to-connect-dht11-sensor-with-arduino-uno-f4d239.  
-[^4]:Team, The Arduino. “What Is Arduino?: Arduino Documentation.” Arduino Documentation | Arduino Documentation, https://docs.arduino.cc/learn/starting-guide/whats-arduino.  
-[^5]:Tino. “Tino/PyFirmata: Python Interface for the Firmata (Http://Firmata.org/) Protocol. It Is Compliant with Firmata 2.1. Any Help with Updating to 2.2 Is Welcome. the Capability Query Is Implemented, but the Pin State Query Feature Not Yet.” GitHub, https://github.com/tino/pyFirmata. 
-[^6]:Python Geeks. “Advantages of Python: Disadvantages of Python.” Python Geeks, 26 June 2021, https://pythongeeks.org/advantages-disadvantages-of-python/. 
-[^7]: Real Python. “Python vs C++: Selecting the Right Tool for the Job.” Real Python, Real Python, 19 June 2021, https://realpython.com/python-vs-cpp/#memory-management. 
-
 1. Track Budget/Revenue
 2. Track orders
-Machine to make crepes
-Track resources (expiration date, number etc)
-Recommend menu referring to the left over resources
-Menu creation
-Customer login system that has limited menu according to allergy
+3. Machine to make crepes
+4. Track resources (expiration date, number etc)
+5. Recommend menu referring to the left over resources
+6. Menu creation
+7. Customer login system that has limited menu according to allergy
