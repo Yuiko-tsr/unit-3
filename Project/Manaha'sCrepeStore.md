@@ -20,3 +20,5 @@ A clear and easy UI that allows the client to track budget, orders and resources
 5. Recommend menu referring to the left over resources
 6. Menu creation
 7. Customer login system that has limited menu according to allergy
+
+# Appendix A:
