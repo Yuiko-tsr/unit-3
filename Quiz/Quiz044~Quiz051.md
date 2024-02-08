@@ -231,7 +231,6 @@ test.run()
 ```
 
 ## Running Code
-<img width="689" alt="Screen Shot 2024-02-08 at 13 51 06" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/38a275e5-0390-4b8b-ae34-2289001c594d">
-
+<img width="1017" alt="Screen Shot 2024-02-08 at 13 51 36" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5e78418f-f596-4c72-9b43-64d88b5149a2">
 
 ## UML diagram
