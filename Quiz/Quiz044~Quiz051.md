@@ -266,3 +266,39 @@ for row in results:
 <img width="769" alt="Screen Shot 2024-02-14 at 11 32 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5c6d24a2-f120-4e98-89ab-407b94154b39">
 
 ## UML diagram
+
+# Quiz 048
+## Question
+
+## Answer
+```.py
+import sqlite3
+from my_lib import DatabaseWorker, make_hash, check_hash
+
+x = DatabaseWorker(name='bitcoin_exchange.db')
+sql_query = "SELECT * from ledger"
+results = x.search(query=sql_query, multiple = True)
+print(results)
+x.close()
+
+for row in results:
+    id= row[0]
+    sender_id = row[1]
+    receiver_id = row[2]
+    amount = row[3]
+    signature = row[4]
+
+    text = f"id {id},sender_id {sender_id},receiver_id {receiver_id},amount {amount}"
+    hash = make_hash(text)
+    valid = check_hash(input_hash = signature, text = text)
+    print(valid)
+    total_amount = 0
+    if valid == True:
+        total_amount += amount
+    print(total_amount)
+```
+
+## Running Code
+<img width="333" alt="Screen Shot 2024-02-15 at 8 21 00" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1f50ddb4-9dcd-4d49-86aa-a96bf4e00418">
+
+## UML Diagram
