@@ -10,6 +10,8 @@ An appropriate solution would include a localized computer aplication with a cle
 
 **Design statement**
 
+<img width="881" alt="Screen Shot 2024-02-15 at 8 50 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1668587e-b948-44ed-8a6a-dc738e2a6409">
+
 **Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
 
 **Fig** UML diagram
