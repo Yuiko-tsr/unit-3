@@ -8,20 +8,6 @@ My client is a local crepe store owner who has no prior experience in owning a s
 ## Proposed Solution
 An appropriate solution would include a localized computer aplication with a clear and easy UI that allows the client to track budget, orders and resources to organize the orders as well as limit food waste. Moreover, we will add a customer login system that allows client’s customers to view only the menu they can eat (according to their allergies).
 
-**Design statement**
-
-<img width="881" alt="Screen Shot 2024-02-15 at 8 50 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1668587e-b948-44ed-8a6a-dc738e2a6409">
-
-**Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
-
-**Fig** UML diagram
-
-**Fig** Sketches
-
-**Fig** RoT
-
-``` Fill out here```
-
 ## Success Criteria
 1. Track Budget/Revenue: The system will track budget and revenue in order for the client to understand their money situations. [issue tackled: "her bills are not paid"]
 2. Track orders: The system will track orders so the client can make enough crepes that have been ordered. [issue tackled: "orders are not fulfilled"]
@@ -30,6 +16,30 @@ An appropriate solution would include a localized computer aplication with a cle
 5. The system recommends menu referring to the left over resources in order to limit food waste. [issue tackled: "concerned about food waste"]
 6. Menu creation: The system allows the client to create new menus and keep track of her menus. [issue tackled: "unable to keep track with paper menus"]
 7. The system has a customer login system that has limited menu according to allergy. [issue tackled: "there has been incidents with customers eating ingredients they should not be"]
+
+## Criteria B: Solution Overview
+
+## ER Diagram
+<img width="881" alt="Screen Shot 2024-02-15 at 8 50 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1668587e-b948-44ed-8a6a-dc738e2a6409">
+
+**Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
+
+## UML Diagram
+**Fig** UML diagram
+
+## Wireframe Sketches
+**Fig** Sketches
+
+## Flowchart
+**Fig** flowchart
+
+## System Diagram
+**Fig** System Diagram
+**Fig** RoT
+
+## Test Plan
+
+## Record of Tasks
 
 # Appendix A:
 
