@@ -10,6 +10,14 @@ An appropriate solution would include a localized computer aplication with a cle
 
 **Design statement**
 
+**Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
+
+**Fig** UML diagram
+
+**Fig** Sketches
+
+**Fig** RoT
+
 ``` Fill out here```
 
 ## Success Criteria
