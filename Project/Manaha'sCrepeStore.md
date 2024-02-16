@@ -53,6 +53,76 @@ budget INT NOT NULL
 )
 ```
 
+```.py
+CREATE Table if not exist user(
+id INTEGER PRIMARY KEY,
+uname TEXT NOT NULL,
+upass NOT NULL,
+budget INT NOT NULL
+)
+```
+
+```.py
+CREATE Table if not exist user(
+id INTEGER PRIMARY KEY,
+uname TEXT NOT NULL,
+upass NOT NULL,
+budget INT NOT NULL
+)
+```
+
+```.py
+CREATE Table if not exist orders(
+id INTEGER PRIMARY KEY,
+resources TEXT NOT NULL,
+type TEXT NOT NULL,
+number INT NOT NULL,
+date INT NOT NULL,
+order_taken FALSE,
+FOREIGN KEY (customer_id)
+)
+```
+
+```.py
+CREATE Table if not exist customer(
+id INTEGER PRIMARY KEY,
+uname TEXT NOT NULL,
+upass NOT NULL,
+budget INT NOT NULL,
+past_orders (SELECT * from orders where customer_id = id)
+allergies LIST
+)
+```
+
+```.py
+CREATE Table if not exist resources(
+id INTEGER PRIMARY KEY,
+type TEXT NOT NULL,
+cost INT NOT NULL,
+amount INT NOT NULL,
+expiration_Date INT NOT NULL
+)
+```
+
+```.py
+CREATE Table if not exist ResourceOrders(
+id INTEGER PRIMARY KEY,
+resource_id integer,
+order_id integer,
+FOREIGN KEY (resource_id) REFERENCES resources(id),
+FOREIGN KEY (order_id) REFERENCES orders(id)
+)
+```
+
+```.py
+CREATE Table if not exist CustomerOrders(
+id INTEGER PRIMARY KEY,
+customer_id integer,
+order_id integer,
+FOREIGN KEY (customer_id) REFERENCES customer(id),
+FOREIGN KEY (order_id) REFERENCES orders(id)
+)
+```
 # Appendix A:
 
 ![IMG_5F4D6C5EA6A5-1](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9853dab7-5639-4b18-84a0-9289ec571e91)
