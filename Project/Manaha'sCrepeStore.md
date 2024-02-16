@@ -45,7 +45,13 @@ An appropriate solution would include a localized computer aplication with a cle
 
 ## Table creation SQL Commands:
 ```.py
-CREATE Table if not exist user
+CREATE Table if not exist user(
+id INTEGER PRIMARY KEY,
+uname TEXT NOT NULL,
+upass NOT NULL,
+budget INT NOT NULL
+)
+```
 
 # Appendix A:
 
