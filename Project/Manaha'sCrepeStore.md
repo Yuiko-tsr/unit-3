@@ -41,6 +41,12 @@ An appropriate solution would include a localized computer aplication with a cle
 
 ## Record of Tasks
 
+## Criteria B: Solution Overview
+
+## Table creation SQL Commands:
+```.py
+CREATE Table if not exist user
+
 # Appendix A:
 
 ![IMG_5F4D6C5EA6A5-1](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9853dab7-5639-4b18-84a0-9289ec571e91)
