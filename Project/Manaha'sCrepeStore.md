@@ -53,23 +53,6 @@ Lastly, the main programming language that will be used in this project is Pytho
 ## Criteria B: Solution Overview
 
 ## Table creation SQL Commands:
-```.py
-CREATE Table if not exist user(
-id INTEGER PRIMARY KEY,
-uname TEXT NOT NULL,
-upass NOT NULL,
-budget INT NOT NULL
-)
-```
-
-```.py
-CREATE Table if not exist user(
-id INTEGER PRIMARY KEY,
-uname TEXT NOT NULL,
-upass NOT NULL,
-budget INT NOT NULL
-)
-```
 
 ```.py
 CREATE Table if not exist user(
