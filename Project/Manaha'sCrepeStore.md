@@ -1,4 +1,4 @@
-<img width="817" alt="Screen Shot 2024-02-16 at 14 56 04" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/01adde71-d9a4-412f-9a41-047041a4582f"># Unit 2: A Distributed Weather Station for ISAK
+# Unit 2: A Distributed Weather Station for ISAK
 
 ## Criteria A: Planning
 
@@ -20,7 +20,7 @@ An appropriate solution would include a localized computer aplication with a cle
 ## Criteria B: Solution Overview
 
 ## ER Diagram
-<img width="840" alt="Screen Shot 2024-02-16 at 14 56 21" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/2ac6c527-902e-4ae4-aebc-2b3de9f502f8">
+<img width="691" alt="Screen Shot 2024-02-16 at 15 09 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8785b67c-a7e6-49e0-a1e3-7c01d498c9d8">
 
 **Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
 
