@@ -275,6 +275,12 @@ for row in results:
 
 **FIG10** Image of code running
 
+
+## ER Diagram
+<img width="500" alt="Screen Shot 2024-02-19 at 8 06 59" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/f02c17f5-9bbc-4aea-be72-923ee856b12a">
+
+**Fig17** ER Diagram
+
 # Quiz 048
 ## Question
 <img width="541" alt="Screen Shot 2024-02-18 at 11 27 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/634db5a8-9b82-4469-bde7-6ec09495de76">
@@ -313,6 +319,11 @@ for row in results:
 <img width="333" alt="Screen Shot 2024-02-15 at 8 21 00" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1f50ddb4-9dcd-4d49-86aa-a96bf4e00418">
 
 **Fig12**Image of code running
+
+## ER Diagram
+<img width="500" alt="Screen Shot 2024-02-19 at 8 06 59" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/f02c17f5-9bbc-4aea-be72-923ee856b12a">
+
+**Fig17** ER Diagram
 
 # Quiz 049
 ## Question
