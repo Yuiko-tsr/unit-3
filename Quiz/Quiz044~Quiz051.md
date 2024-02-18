@@ -47,7 +47,7 @@ WHERE accounts.account_id IN (12, 13, 15, 17, 19);
 ```
 
 ## Running Code
-<img width="500" alt="Screen Shot 2024-02-18 at 11 22 07" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5f317d32-e9d9-4f36-b90f-9e379b633079">
+<img width="529" alt="Screen Shot 2024-02-19 at 8 17 18" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/4e43624c-5201-44b5-b1e8-f0f1714bd8ed">
 
 **FIG2** Image of code running
 
