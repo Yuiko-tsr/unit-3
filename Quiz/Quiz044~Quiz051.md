@@ -52,6 +52,7 @@ WHERE accounts.account_id IN (12, 13, 15, 17, 19);
 **FIG2** Image of code running
 
 ## UML diagram
+<img width="342" alt="Screen Shot 2024-02-18 at 11 39 48" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8d44cef9-7e1c-49e2-bf0b-08504b1a3577">
 
 **FIG3** Image of UML Diagram
 
@@ -100,15 +101,11 @@ print('average word length is ', out)
 
 **FIG 5** Image of code running
 
-## UML diagram
-
-**FIG6** Image of UML Diagram
-
 # Quiz 046
 ## Question
 <img width="542" alt="Screen Shot 2024-02-18 at 11 25 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5d0d2494-08d1-4f1c-be83-a8bf4e762e74">
 
-**FIG7** Image of question
+**FIG6** Image of question
 ## Answer
 ```.py
 import sqlite3
@@ -236,17 +233,18 @@ test.run()
 ## Running Code
 <img width="1017" alt="Screen Shot 2024-02-08 at 13 51 36" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5e78418f-f596-4c72-9b43-64d88b5149a2">
 
-**FIG8**Image of question
+**FIG7**Image of question
 
 ## UML diagram
+<img width="203" alt="Screen Shot 2024-02-18 at 11 40 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/42395dde-8d6c-425b-b0c7-683178da3bd7">
 
-**FIG9** Image of UML Diagram
+**FIG8** Image of UML Diagram
 
 # Quiz047
 ## Question
 <img width="539" alt="Screen Shot 2024-02-18 at 11 26 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/4a708447-ffb0-46b9-ac80-d7a8550feabb">
 
-**Fig10** Image of question
+**Fig9** Image of question
 
 ## Answer
 ```.py
@@ -275,17 +273,13 @@ for row in results:
 ## Running code
 <img width="769" alt="Screen Shot 2024-02-14 at 11 32 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5c6d24a2-f120-4e98-89ab-407b94154b39">
 
-**FIG11** Image of code running
-
-## UML diagram
-
-**FIG 12** Image of UML Diagram
+**FIG10** Image of code running
 
 # Quiz 048
 ## Question
 <img width="541" alt="Screen Shot 2024-02-18 at 11 27 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/634db5a8-9b82-4469-bde7-6ec09495de76">
 
-**FIG13** Image of question
+**FIG11** Image of question
 
 ## Answer
 ```.py
@@ -318,7 +312,32 @@ for row in results:
 ## Running Code
 <img width="333" alt="Screen Shot 2024-02-15 at 8 21 00" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1f50ddb4-9dcd-4d49-86aa-a96bf4e00418">
 
-**Fig14**Image of code running
-## UML Diagram
+**Fig12**Image of code running
 
-**FIG15**image of UML Diagram
+# Quiz 049
+## Question
+
+**FIG13** Image of question
+
+## Answer
+```.py
+
+```
+
+## Running Code
+
+**Fig14**Image of code running
+
+# Quiz 050
+## Question
+
+**FIG15** Image of question
+
+## Answer
+```.py
+
+```
+
+## Running Code
+
+**Fig16**Image of code running
