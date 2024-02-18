@@ -1,67 +1,65 @@
 # Quiz 044
 ## Question
+<img width="538" alt="Screen Shot 2024-02-18 at 11 22 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/97428f12-7324-4f8f-9ade-bbe0128447eb">
+
+**FIG 1** image of question
 
 ## Answer
 ```.py
-SELECT * FROM person;
-select * from crime_scene_report where type ='murder' and date = '20180115' and city='SQL City';
--- Security footage shows that there were 2 witnesses. The first witness lives at the last house on "Northwestern Dr". The second witness, named Annabel, lives somewhere on "Franklin Ave".
-select * from person where address_street_name='Northwestern Dr';
--- 14887,Morty Schapiro,118009,4919,Northwestern Dr,111564949
-select * from interview where person_id = '14887';
--- I heard a gunshot and then saw a man run out. He had a "Get Fit Now Gym" bag. The membership number on the bag started with "48Z". Only gold members have those bags. The man got into a car with a plate that included "H42W".
-select * from person where name like 'Annabel %' and address_street_name = 'Franklin Ave';
-select * from interview where person_id = '16371';
--- I saw the murder happen, and I recognized the killer from my gym when I was working out last week on January the 9th.
+select account_id, sum(case when transaction_type = 'withdraw' then amount else 0 end) as withdraw, sum(case when transaction_type = 'deposit' then amount else 0 end) as deposit, sum(case when transaction_type = 'withdraw' then amount else 0 end) - sum(case when transaction_type = 'deposit' then amount else 0 end) as expected_balance from transactions group by account_id;
 
-select * from get_fit_now_member where id like '48Z%' and membership_status = 'gold';
--- 48Z7A,28819,Joe Germuska,20160305,gold
--- 48Z55,67318,Jeremy Bowers,20160101,gold
-select * from person where id = '28819' or id = '67318';
-select * from get_fit_now_check_in where check_in_date = '20180109' and membership_id = '48Z7A' or membership_id = '48Z55';
--- 48Z7A,20180109,1600,1730
--- 48Z55,20180109,1530,1700
+select accounts.account_id, accounts.balance, sum(case when transaction_type = 'withdraw' then amount else 0 end) as withdraw, sum(case when transactions.transaction_type = 'deposit' then amount else 0 end) as deposit, sum(case when transactions.transaction_type = 'deposit' then amount else 0 end) - sum(case when transactions.transaction_type = 'withdraw' then amount else 0 end) as expected_balance from transactions inner join accounts on transactions.account_id = accounts.account_id group by accounts.account_id;
 
-select * from drivers_license where plate_number like "%H42W%";
--- 183779,21,65,blue,blonde,female,H42W0X,Toyota,Prius
--- 423327,30,70,brown,brown,male,0H42W2,Chevrolet,Spark LS
--- 664760,21,71,black,black,male,4H42WR,Nissan,Altima
-select * from person where license_id='423327' or license_id='664760';
--- 51739,Tushar Chandra,664760,312,Phi St,137882671
--- 67318,Jeremy Bowers,423327,530,"Washington Pl, Apt 3A",871539279
+SELECT
+  CASE
+    WHEN total_deposit - total_withdraw != balance THEN 'fraud'
+    ELSE 'clear'
+  END AS 'Status',
+  total_deposit,
+  total_withdraw,
+  balance,
+  account_id
+FROM (
+  SELECT
+    SUM(amount) AS total_deposit,
+    account_id AS account_deposit
+  FROM transactions
+  WHERE transaction_type = 'deposit'
+  GROUP BY account_id
+),
+(
+  SELECT
+    SUM(amount) AS total_withdraw,
+    account_id AS account_withdraw
+  FROM transactions
+  WHERE transaction_type = 'withdraw'
+  GROUP BY account_id
+),
+accounts
+WHERE account_deposit = account_withdraw
+  AND account_deposit = accounts.account_id;
 
-INSERT into solution values(1,'Jeremy Bowers');
-Select value from solution;
--- Congrats, you found the murderer! But wait, there's more... If you think you're up for a challenge, try querying the interview transcript of the murderer to find the real villain behind this crime. If you feel especially confident in your SQL skills, try to complete this final step with no more than 2 queries. Use this same INSERT statement with your new suspect to check your answer.
-
-select * from interview where person_id = '67318';
--- I was hired by a woman with a lot of money. I don't know her name but I know she's around 5'5" (65") or 5'7" (67"). She has red hair and she drives a Tesla Model S. I know that she attended the SQL Symphony Concert 3 times in December 2017.
--- select * from drivers_license where hair_color='red' and car_make='Tesla' and car_model='Model S' and gender ='female' and (height ='65' or height ='67') ;
--- -- 918773,48,65,black,red,female,917UU3,Tesla,Model S
--- select * from person where license_id='918773';
--- INSERT into solution values(1,'Red Korb');
--- Select value from solution;
--- select * from facebook_event_checkin where event_name ='SQL Symphony Concert' and date like '201712%';
--- -- person id 24556 or 99716
--- select * from person where id = '24556' or id = '99716';
--- insert into solution values(1,'Miranda Priestly');
--- select value from solution;
--- -- Congrats, you found the brains behind the murder! Everyone in SQL City hails you as the greatest SQL detective of all time. Time to break out the champagne!
-
-SELECT * from person join facebook_event_checkin fec on person.id = fec.person_id join drivers_license dl on person.license_id = dl.id  where event_name ='SQL Symphony Concert' and date like '201712%' and  hair_color='red' and car_make='Tesla' and car_model='Model S' and gender ='female' and (height ='65' or height = '66' or height ='67') ;
-INSERT into solution values(1,'Miranda Priestly');
-Select value from solution;
-
+SELECT customers.first_name, customers.last_name, accounts.account_id
+FROM customers
+JOIN accounts
+ON customers.customer_id = accounts.customer_id
+WHERE accounts.account_id IN (12, 13, 15, 17, 19);
 ```
 
 ## Running Code
-![Uploading Screen Shot 2024-02-08 at 13.04.08.png…]()
+<img width="500" alt="Screen Shot 2024-02-18 at 11 22 07" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5f317d32-e9d9-4f36-b90f-9e379b633079">
+
+**FIG2** Image of code running
 
 ## UML diagram
 
+**FIG3** Image of UML Diagram
+
 # Quiz 045
 ## Question
+<img width="546" alt="Screen Shot 2024-02-18 at 11 24 37" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/6f3aec96-d124-47a3-91d5-96db7a741d6f">
 
+**FIG4**Image of question
 ## Answer
 ```.py
 import sqlite3
@@ -100,12 +98,17 @@ print('average word length is ', out)
 
 <img width="388" alt="Screen Shot 2024-02-08 at 13 01 13" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/fa4551c4-b39c-47c2-be0d-8cccc2dd5d63">
 
+**FIG 5** Image of code running
 
 ## UML diagram
 
+**FIG6** Image of UML Diagram
+
 # Quiz 046
 ## Question
+<img width="542" alt="Screen Shot 2024-02-18 at 11 25 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5d0d2494-08d1-4f1c-be83-a8bf4e762e74">
 
+**FIG7** Image of question
 ## Answer
 ```.py
 import sqlite3
@@ -233,10 +236,17 @@ test.run()
 ## Running Code
 <img width="1017" alt="Screen Shot 2024-02-08 at 13 51 36" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5e78418f-f596-4c72-9b43-64d88b5149a2">
 
+**FIG8**Image of question
+
 ## UML diagram
+
+**FIG9** Image of UML Diagram
 
 # Quiz047
 ## Question
+<img width="539" alt="Screen Shot 2024-02-18 at 11 26 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/4a708447-ffb0-46b9-ac80-d7a8550feabb">
+
+**Fig10** Image of question
 
 ## Answer
 ```.py
@@ -265,10 +275,17 @@ for row in results:
 ## Running code
 <img width="769" alt="Screen Shot 2024-02-14 at 11 32 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5c6d24a2-f120-4e98-89ab-407b94154b39">
 
+**FIG11** Image of code running
+
 ## UML diagram
+
+**FIG 12** Image of UML Diagram
 
 # Quiz 048
 ## Question
+<img width="541" alt="Screen Shot 2024-02-18 at 11 27 23" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/634db5a8-9b82-4469-bde7-6ec09495de76">
+
+**FIG13** Image of question
 
 ## Answer
 ```.py
@@ -301,4 +318,7 @@ for row in results:
 ## Running Code
 <img width="333" alt="Screen Shot 2024-02-15 at 8 21 00" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1f50ddb4-9dcd-4d49-86aa-a96bf4e00418">
 
+**Fig14**Image of code running
 ## UML Diagram
+
+**FIG15**image of UML Diagram
