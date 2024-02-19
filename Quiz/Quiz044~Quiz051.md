@@ -328,6 +328,8 @@ for row in results:
 # Quiz 049
 ## Question
 
+<img width="935" alt="Screen Shot 2024-02-19 at 17 46 41" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5286b7a7-b7a2-46fe-9a51-737fa065da03">
+
 **FIG13** Image of question
 
 ## Answer
