@@ -332,10 +332,38 @@ for row in results:
 
 ## Answer
 ```.py
+import sqlite3
+from my_lib import DatabaseWorker, make_hash, check_hash
 
+x = DatabaseWorker(name='bitcoin_exchange.db')
+
+cr='''CREATE TABLE if not exists users(
+id INTEGER PRIMARY KEY,
+user_id int NOT NULL, 
+uname  Not NULL,
+uemail Not Null
+)'''
+
+x.run_query(cr)
+
+add = '''INSERT into users (user_id, uname, uemail) values(560,'bob1','bob1@xyz'),(371,'bob2','bob2@xyz'),(488,'bob3','bob3@xyz'),(561,'bob4','bob4@xyz'),(254,'bob5','bob5@xyz'),(920,'bob6','bob6@xyz'),(438,'bob7','bob7@xyz'),(744,'bob8','bob8@xyz'),(261,'bob9','bob9@xyz')
+'''
+x.run_query(add)
+
+sql_query = "Select * from ledger join users on sender_id = user_id where uname = 'bob6'"
+sql_query2 = "Select * from ledger join users on receiver_id = user_id where uname = 'bob6'"
+# select * from (select * from ledger join users r on r_id = sender_id) t
+# join users s on s_id=t.receiver_id
+results = x.search(query=sql_query, multiple = True)
+results1 = x.search(query=sql_query2, multiple = True)
+
+print(results)
+print(results1)
 ```
 
 ## Running Code
+
+<img width="491" alt="Screen Shot 2024-02-19 at 9 05 10" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/195fe93f-c572-497c-8c15-bd08723833ae">
 
 **Fig14**Image of code running
 
