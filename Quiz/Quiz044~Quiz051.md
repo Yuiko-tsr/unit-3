@@ -361,11 +361,16 @@ results1 = x.search(query=sql_query2, multiple = True)
 
 print(results)
 print(results1)
+
+sql_query3 = "select * from users where user_id = 920"
+
+results2 = x.search(query = sql_query3, multiple = True)
+print(results2)
 ```
 
 ## Running Code
 
-<img width="491" alt="Screen Shot 2024-02-19 at 9 05 10" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/195fe93f-c572-497c-8c15-bd08723833ae">
+<img width="483" alt="Screen Shot 2024-02-19 at 17 51 58" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/cf3a73b6-5e1a-40d0-b698-374b7ca236c7">
 
 **Fig14**Image of code running
 
