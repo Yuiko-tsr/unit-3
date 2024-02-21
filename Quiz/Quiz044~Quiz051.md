@@ -376,14 +376,45 @@ print(results2)
 
 # Quiz 050
 ## Question
+<img width="936" alt="Screen Shot 2024-02-22 at 7 55 14" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/c468284a-8874-4a52-ac85-4400255b6de1">
 
 **FIG15** Image of question
 
 ## Answer
 ```.py
+class flight():
+    def __init__(self, flight_number, origin, destination, departure_time, duration):
+        self.flight = flight_number
+        self.origin = origin
+        self.destination = destination
+        self.duration = duration
+        self.departure_time = departure_time
+
+
+    def get_duration(self, duration,destination):
+        hours = duration[0]
+        minutes = duration[1]
+        seconds = duration[2]
+        return f"{hours} hours {minutes} minutes {seconds} seconds remaining for {destination}"
+
+flight1 = flight(flight_number = "YUI0401", origin = "UK", destination = "Japanese Airport", departure_time = "11.30 AM",duration = [10, 57, 12])
+flight2= flight(flight_number = "KO2007", origin = "UK", destination = "Narita Airoport", departure_time = "8.30 AM",duration = [1, 40, 35])
+
+print(flight1.get_duration(duration = flight1.duration,destination=flight1.destination))
+
+print(flight2.get_duration(duration = flight2.duration,destination=flight2.destination))
+
 
 ```
 
 ## Running Code
 
+<img width="1157" alt="Screen Shot 2024-02-22 at 8 03 38" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/2ae5d68b-9ffb-4269-b947-4c41fc64d7d4">
+
 **Fig16**Image of code running
+
+## UML Diagram
+
+<img width="291" alt="Screen Shot 2024-02-22 at 8 03 52" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3f2c08ee-b767-42d2-8742-5484281a7c2a">
+
+**FIG17** UML diagram
