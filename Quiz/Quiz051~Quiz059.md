@@ -52,6 +52,10 @@ print(test2.get_pal_list())
 
 ## UML Diagram/EE Diagram
 
+<img width="411" alt="Screen Shot 2024-02-29 at 13 48 00" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/e8944bea-36cc-43c3-aca5-444ab418c9af">
+
+<img width="424" alt="Screen Shot 2024-02-29 at 13 48 18" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d13e3487-c04a-4df2-a7c8-3c65a027ec5c">
+
 # Quiz 052
 ## Question
 ## Answer
@@ -76,4 +80,5 @@ print(text.pour(n=3))
 <img width="438" alt="Screen Shot 2024-02-29 at 13 44 44" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/ce17d177-cdea-4511-ae1e-2e9cd7e46426">
 
 ## UML Diagram/EE Diagram
+<img width="393" alt="Screen Shot 2024-02-29 at 13 46 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8124e72f-0c46-4f40-82ed-fae87f15b1f2">
 
