@@ -80,5 +80,5 @@ print(text.pour(n=3))
 <img width="438" alt="Screen Shot 2024-02-29 at 13 44 44" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/ce17d177-cdea-4511-ae1e-2e9cd7e46426">
 
 ## UML Diagram/EE Diagram
-<img width="393" alt="Screen Shot 2024-02-29 at 13 46 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8124e72f-0c46-4f40-82ed-fae87f15b1f2">
 
+<img width="443" alt="Screen Shot 2024-02-29 at 13 49 02" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/f895dd0d-b4c6-4d88-afc4-461af1d74a64">
