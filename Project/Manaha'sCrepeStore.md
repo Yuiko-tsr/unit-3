@@ -1,4 +1,4 @@
-<img width="526" alt="Screen Shot 2024-03-09 at 15 52 34" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/e20da279-bc14-4620-8bc6-77fd08a0eb50"># Unit 3: Crepe Store Application
+# Unit 3: Crepe Store Application
 
 # Criteria A: Planning
 
