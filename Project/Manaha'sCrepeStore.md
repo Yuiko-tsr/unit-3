@@ -72,7 +72,6 @@ Lastly, the main programming language that will be used in this project is Pytho
 
 ## Criteria D: Functionality
 ## The drive to the video:
-## The screens:
 
 # Appendix A:
 
