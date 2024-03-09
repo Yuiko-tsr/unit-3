@@ -132,6 +132,10 @@ FOREIGN KEY (customer_id) REFERENCES customer(id),
 FOREIGN KEY (order_id) REFERENCES orders(id)
 )
 ```
+## Criteria D: Functionality
+## The drive to the video:
+## The screens:
+
 # Appendix A:
 
 ![IMG_5F4D6C5EA6A5-1](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9853dab7-5639-4b18-84a0-9289ec571e91)
