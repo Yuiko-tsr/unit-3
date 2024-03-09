@@ -1,4 +1,4 @@
-# Unit 3: Crepe Store Application
+<img width="526" alt="Screen Shot 2024-03-09 at 15 52 34" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/e20da279-bc14-4620-8bc6-77fd08a0eb50"># Unit 3: Crepe Store Application
 
 # Criteria A: Planning
 
@@ -31,11 +31,19 @@ Lastly, the main programming language that will be used in this project is Pytho
 # Criteria B: Solution Overview
 
 ## System Diagram
+<img width="850" alt="Screen Shot 2024-03-09 at 15 53 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/df09bf01-a5fb-403e-ad8d-002dc059363f">
 
 **Fig** System Diagram
-A visual representation of the system, its parts, and how they relate to one another is provided by the system diagram. This displays the input (keyboard) to the output (various systems used in this project, including versions of the programming language (Python and KivyMD), the computer version and detail (Processor, version, memory, etc.), the module and database, and the output screen (application interface on the computer screen).
+The system diagram gives a visual depiction of the system, its components, and their relationships. This shows the keyboard as the input and the output (different systems used in this project), such as the Python and KivyMD versions of the programming language, the module and database, the processor, version, and memory of the computer, and the output screen (computer screen application).
 
+## Wireframe Sketches
+<img width="661" alt="Screen Shot 2024-03-09 at 15 53 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d46b5e69-932d-4922-91ee-457c535ab76c">
 
+**Fig** Sketches
+The purpose of this wireframe diagram is to give users a visual depiction of the application's layout and structure, or user interface design. The wireframe also illustrates how different buttons will access different screens. The arrows that extend from the button to the screen allow the user to see which screen will open when they press and release the button.
+
+## Flowchart
+**Fig** flowchart
 
 ## ER Diagram
 <img width="691" alt="Screen Shot 2024-02-16 at 15 09 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8785b67c-a7e6-49e0-a1e3-7c01d498c9d8">
@@ -44,12 +52,6 @@ A visual representation of the system, its parts, and how they relate to one ano
 
 ## UML Diagram
 **Fig** UML diagram
-
-## Wireframe Sketches
-**Fig** Sketches
-
-## Flowchart
-**Fig** flowchart
 
 ## Test Plan
 
