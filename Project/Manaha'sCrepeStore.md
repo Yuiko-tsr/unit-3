@@ -31,8 +31,11 @@ Lastly, the main programming language that will be used in this project is Pytho
 # Criteria B: Solution Overview
 
 ## System Diagram
+
 **Fig** System Diagram
-**Fig** RoT
+A visual representation of the system, its parts, and how they relate to one another is provided by the system diagram. This displays the input (keyboard) to the output (various systems used in this project, including versions of the programming language (Python and KivyMD), the computer version and detail (Processor, version, memory, etc.), the module and database, and the output screen (application interface on the computer screen).
+
+
 
 ## ER Diagram
 <img width="691" alt="Screen Shot 2024-02-16 at 15 09 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8785b67c-a7e6-49e0-a1e3-7c01d498c9d8">
@@ -51,6 +54,7 @@ Lastly, the main programming language that will be used in this project is Pytho
 ## Test Plan
 
 ## Record of Tasks
+**Fig** RoT
 
 # Criteria C: Development
 ## Techniques used
