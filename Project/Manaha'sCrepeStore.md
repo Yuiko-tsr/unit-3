@@ -61,7 +61,7 @@ Lastly, the main programming language that will be used in this project is Pytho
 5. Functions
 6. If statements/For loops/While loops
 
-## Computational thiking
+## Computational thinking
 1. Decomposition
 2. Pattern Recognition
 3. Abstraction
