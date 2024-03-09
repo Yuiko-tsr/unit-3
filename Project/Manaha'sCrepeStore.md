@@ -6,6 +6,9 @@
 My client is a local crepe store owner who has no prior experience in owning a shop and her new crepe store is currently overloaded with customers. She has indicated that she has no system in tracking the amount of resources she has left, and she is also keeping track of orders and expenses by using a simple paper record and because it is a paper record her papers can get lost and her bills are not paid and orders are not fulfilled. Since she has been using her crepe machine for years it also breaks down often. Moreover, she is concerned about food waste and because she has no way of tracking her resources there are many times where her resources goes to waste such as flour and sugar.　She also wants to clarify her customers allergies as there has been incidents with customers eating ingredients they should not be. It is also very difficult to add new menus as the client is unable to keep track with paper menus.(See evidence of consolation in Appendix A)
 
 ## Proposed Solution
+My proposed application will be a Crepe store Manager that will enable each customer to record their orders as well as for the staff to record details of the inventory and budget. The application will have a user-friendly interface that will allow staff to add and remove menus easily, as well as order more ingrediences and track budget through the use of a table. This solution will provide a reliable and efficient tool for managing the store and prevent payments being forgoten and orders not being fullfilled. The application will be constructed using Pycharm, the python language and the KivyMD Language. This project will take 3 weeks and will be evaluated according to the criteria set below.
+
+## Rationale for proposed solution
 An appropriate solution would include a localized computer aplication with a clear and easy UI that allows the client to track budget, orders and resources to organize the orders as well as limit food waste. Moreover, we will add a customer login system that allows client’s customers to view only the menu they can eat (according to their allergies).
 
 In this project, the application will have login system as the client may have some sensitive information, so login in system is needed to secure the client's personal information as well as to customize their expirence but submitting their budget and allergies. The application will also allow client to create different recommendations for each person according to their needs and this application will allow the user to record the orders they have made as well as add stars on their favorite menus.
@@ -16,17 +19,20 @@ Secondly, SQLAlchemy is the main library that will be used in this project to cr
 
 Lastly, the main programming language that will be used in this project is Python because Python allows me to meet all the client’s requirements and it also allows me to create applications interface and manage the database by cooperating with Kivymd and SQLAlchemy mentioned before. 
 
-
 ## Success Criteria
 1. Track Budget/Revenue: The system will track budget and revenue in order for the client to understand their money situations. [issue tackled: "her bills are not paid"]
 2. Track orders: The system will track orders so the client can make enough crepes that have been ordered. [issue tackled: "orders are not fulfilled"]
 3. Machine to make crepes: The system will allow the client to make crepes for their customers. [issue tackled: "machine ... breaks down often.]
 4. Track resources: Tracks the resources of the crepes' expiration date and amount to limit food waste or lack of resources. [issue tackled: "because she has no way of tracking her resources there are many times where her resources goes to waste such as flour and sugar"]
-5. The system recommends menu referring to the left over resources in order to limit food waste. [issue tackled: "concerned about food waste"]
+5. The system recommends orders referring to the left over resources in order to limit food waste. [issue tackled: "concerned about food waste"]
 6. Menu creation: The system allows the client to create new menus and keep track of her menus. [issue tackled: "unable to keep track with paper menus"]
 7. The system has a customer login system that has limited menu according to allergy. [issue tackled: "there has been incidents with customers eating ingredients they should not be"]
 
 ## Criteria B: Solution Overview
+
+## System Diagram
+**Fig** System Diagram
+**Fig** RoT
 
 ## ER Diagram
 <img width="691" alt="Screen Shot 2024-02-16 at 15 09 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8785b67c-a7e6-49e0-a1e3-7c01d498c9d8">
@@ -42,15 +48,26 @@ Lastly, the main programming language that will be used in this project is Pytho
 ## Flowchart
 **Fig** flowchart
 
-## System Diagram
-**Fig** System Diagram
-**Fig** RoT
-
 ## Test Plan
 
 ## Record of Tasks
 
-## Criteria B: Solution Overview
+## Criteria C: Development
+## Techniques used
+1. OOP paradigm
+2. KivyMD Library
+3. Relational databases
+4. SQLite, OPM
+5. Functions
+6. If statements/For loops/While loops
+
+## Computational thiking
+1. Decomposition
+2. Pattern Recognition
+3. Abstraction
+4. Algorithm Design
+
+## Python file: "Login_Sign_in.py"
 
 ## Table creation SQL Commands:
 
