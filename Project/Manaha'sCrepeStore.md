@@ -1,6 +1,6 @@
 # Unit 3: Crepe Store Application
 
-## Criteria A: Planning
+# Criteria A: Planning
 
 ## Problem definition
 My client is a local crepe store owner who has no prior experience in owning a shop and her new crepe store is currently overloaded with customers. She has indicated that she has no system in tracking the amount of resources she has left, and she is also keeping track of orders and expenses by using a simple paper record and because it is a paper record her papers can get lost and her bills are not paid and orders are not fulfilled. Since she has been using her crepe machine for years it also breaks down often. Moreover, she is concerned about food waste and because she has no way of tracking her resources there are many times where her resources goes to waste such as flour and sugar.　She also wants to clarify her customers allergies as there has been incidents with customers eating ingredients they should not be. It is also very difficult to add new menus as the client is unable to keep track with paper menus.(See evidence of consolation in Appendix A)
@@ -28,7 +28,7 @@ Lastly, the main programming language that will be used in this project is Pytho
 6. Menu creation: The system allows the client to create new menus and keep track of her menus. [issue tackled: "unable to keep track with paper menus"]
 7. The system has a customer login system that has limited menu according to allergy. [issue tackled: "there has been incidents with customers eating ingredients they should not be"]
 
-## Criteria B: Solution Overview
+# Criteria B: Solution Overview
 
 ## System Diagram
 **Fig** System Diagram
@@ -52,7 +52,7 @@ Lastly, the main programming language that will be used in this project is Pytho
 
 ## Record of Tasks
 
-## Criteria C: Development
+# Criteria C: Development
 ## Techniques used
 1. OOP paradigm
 2. KivyMD Library
@@ -70,7 +70,7 @@ Lastly, the main programming language that will be used in this project is Pytho
 ## Python file: "Login_Sign_in.py"
 
 
-## Criteria D: Functionality
+# Criteria D: Functionality
 ## The drive to the video:
 
 # Appendix A:
