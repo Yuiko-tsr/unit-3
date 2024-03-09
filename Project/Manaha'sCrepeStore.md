@@ -78,6 +78,7 @@ The purpose of this wireframe diagram is to give users a visual depiction of the
 
 # Criteria D: Functionality
 ## The drive to the video:
+https://drive.google.com/file/d/1yNZ_OLSauYll88BlrTTrPy_8v25bbMe_/view?usp=sharing
 
 # Appendix A:
 
