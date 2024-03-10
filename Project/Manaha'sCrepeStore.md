@@ -153,27 +153,27 @@ class DatabaseWorker:
 In this code the init function takes one argument, which is the name of the database file to connect to. The code uses the sqlite3 library to connect to the specified database file and creates a cursor object to interact with the database. This cursor object is used to execute SQL commands and queries on the connected database. The database_worker class abstracts away the implementation details of connecting to and interacting with a database. This allows me, for the rest of the code to simply create an instance of database_worker and call its methods without worrying about the underlying database implementation.
 
 ```.py
-    def search(self,query:str, multiple=False):
-        results = self.cursor.execute(query)
-        if multiple:
-            return results.fetchall()#return multiple rows
-        return results.fetchone() #return a single value
+def search(self,query:str, multiple=False):
+    results = self.cursor.execute(query)
+    if multiple:
+        return results.fetchall()#return multiple rows
+    return results.fetchone() #return a single value
 ```
 The code above is an example of a function that is used many times throughout the code. By creating such function we can concisely and efficiently write code which is both helpful for myself as well as other developers that may view the code in the future.
 
 ## Registration
 ```.py
 sql_query = "SELECT uname from users"
-        results = x.search(query=sql_query, multiple=True)
+results = x.search(query=sql_query, multiple=True)
 
-        for r in results:
-            if username == r[0]:
-                self.ids.success.text = "Username taken. Please choose another username"
-                return
+for r in results:
+    if username == r[0]:
+        self.ids.success.text = "Username taken. Please choose another username"
+        return
 
-        sql = f"INSERT into users (uname, uemail, upass) values('{username}','{email}','{password1}')"
-        x.run_query(sql)
-        self.parent.current = "LoginPage"
+sql = f"INSERT into users (uname, uemail, upass) values('{username}','{email}','{password1}')"
+x.run_query(sql)
+self.parent.current = "LoginPage"
 ```
 The code above first checks the database for any username that has already been registered and saves each line in the variable results. After that we put the results into a for loop and see if any match with the inputed username. If there were a match the code will ask to choose another name and if not it will register the user and send you to the login page.
 
@@ -181,11 +181,18 @@ The code above allows us to prevent the creation of multiple accounts with the s
 
 ## Logining In
 ```.py
+sql_query = "SELECT uname,uemail,upass from users"
+results = x.search(query=sql_query, multiple=True)
+
 for result in results:
     if username == result[0] or username == result[1] and password == result[2]:
         self.parent.current = "Home_Client"
         return
 ```
+The code above searches for a SQL query on a database and retrieves the results into a python data structure. This can then be processed and displayed in various formats dependign on the application's needs.
+
+Here we are extracting information from the database table, users to confirm that the user is authorized through the process of using the for loop and if statement. The for loop allows us to go through each line of the results and the if statement confirms whether the username and password matches any of the registered accounts. Through this process, we can make sure thta only authorized users are able to access and order crepes which provides security and efficiency for the tool. Moreover, it leaves a positive impression on the users on the reliability of the application's management of private information and organizaiton.
+
 ## Table
 ```.py
 def on_pre_enter(self, *args):
