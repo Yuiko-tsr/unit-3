@@ -121,7 +121,20 @@ This UML diagram for the OOP classes illustrates the classes and methods utilize
 4. Algorithm Design
 
 ## Python file: "Login_Sign_in.py"
+```.py
+from kivy.core.window import Window
+from kivymd.uix.menu import MDDropdownMenu
+from kivymd.uix.screen import MDScreen
+from kivymd.uix.datatables import MDDataTable
+from my_lib import DatabaseWorker
+from datetime import datetime, timedelta
+from kivymd.app import MDApp
+from kivymd.uix.dialog import MDDialog
+from dateutil.relativedelta import relativedelta
+```
+The code imports several libraries that will be used to build the Crepe Store application. 
 
+## Kivy file: "Login_Sign_in.kv"
 
 # Criteria D: Functionality
 ## The drive to the video:
