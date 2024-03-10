@@ -175,7 +175,9 @@ sql_query = "SELECT uname from users"
         x.run_query(sql)
         self.parent.current = "LoginPage"
 ```
-The code above first checks The code above allows us to prevent the creation of multiple accounts with the same name. This is troublesum as we have orders placed for specific account holders and if we have multiple people with the same name there could be orders that are misplaced or payments that are not fullfiled.
+The code above first checks the database for any username that has already been registered and saves each line in the variable results. After that we put the results into a for loop and see if any match with the inputed username. If there were a match the code will ask to choose another name and if not it will register the user and send you to the login page.
+
+The code above allows us to prevent the creation of multiple accounts with the same name. This is troublesum as we have orders placed for specific account holders and if we have multiple people with the same name there could be orders that are misplaced or payments that are not fullfiled.
 
 ## Logining In
 ```.py
