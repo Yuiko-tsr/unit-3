@@ -197,7 +197,7 @@ MDTextField:
   id: password_field
   password: True
 ```
-Here the code creates an MDTextField widget that allows users to input text. The MDTextField is defined with an ID of "password_field" and several attributes such as hint_text, font_size, and password. In this MDTextField we see that the password variable is set to "True". This encrypts the input and provides security and privacy for the users trying to input their password.
+Here the code creates an MDTextField widget that allows users to input text. The MDTextField is defined with an ID of "password_field" and several attributes such as hint_text, font_size, and password. The hint_text parameter prompts the user with "Enter password: " as placeholder text within the field. The font_size attribute sets the font size of the text within the field to 15 points. The id attribute assigns a unique identifier, "password_field", to the widget, facilitating its reference elsewhere in the application's logic. Finally, the password attribute is set to True. This encrypts the input and provides security and privacy for the users trying to input their password.
 
 ## MDBoxLayout
 ```.py
@@ -220,7 +220,7 @@ MDBoxLayout:
         on_press:
             root.parent.current = "SignInPage_Client"
 ```
-The MDBoxLayout allows us to organize the design of the screen more easily by letting us align certain objects "vertically" or horizontally". This way we can more easily organize the screen for a more simple and accessible design for the users and client. 
+The MDBoxLayout allows us to organize the design of the screen more easily by letting us align certain objects "vertically" or horizontally". This way we can more easily organize the screen for a more simple and accessible design for the users and client. Here we see that the Login button and Sign In button are aligned horizontally without the need for size_hint or pos_hint. This makes it easy for the developers to review the code as it leaves out unneccesary information and keeps the code concise and simple.
 
 # Criteria D: Functionality
 ## The drive to the video:
