@@ -1,4 +1,4 @@
-![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/260c04fd-8909-4e2b-b9b1-cb432483d64a)# Unit 3: Crepe Store Application
+Unit 3: Crepe Store Application
 
 ![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9bd84c70-c4af-4120-afaf-908a319c227f)
 
@@ -135,9 +135,13 @@ from kivymd.app import MDApp
 from kivymd.uix.dialog import MDDialog
 from dateutil.relativedelta import relativedelta
 ```
-The code imports several libraries that will be used to build the Crepe Store application. 
+The code imports several libraries that will be used to build the Crepe Store application. The kivymd library is used to build the graphical user interface (GUI) of the application, which will be user-friendly and easy to navigate and allows the code to identify what type of variable is being used and the datetime library allows us to access the current time to specify the time when the order was placed. 
 
 ## DatabaseWorker
+The class called Database_Worker that initializes a connection to a SQLite database with the given name. It abstract away the details of connecting to a database, allowing the developer to interact with the database through a simplified interface. This will allow me to focus on the more complex and important aspects of the application, such as the user interface and functionality.
+
+This class will be useful in the implementation of my application as it allows for a simplified and organized way to store and retrieve data related to the food items stored in the Crepe Store.
+
 ```.py
 class DatabaseWorker:
     def __init__(self, name:str):
@@ -146,6 +150,8 @@ class DatabaseWorker:
         self.connection = sqlite3.connect(self.name_db)
         self.cursor = self.connection.cursor()
 ```
+In this code the init function takes one argument, which is the name of the database file to connect to. The code uses the sqlite3 library to connect to the specified database file and creates a cursor object to interact with the database. This cursor object is used to execute SQL commands and queries on the connected database. The database_worker class abstracts away the implementation details of connecting to and interacting with a database. This allows me, for the rest of the code to simply create an instance of database_worker and call its methods without worrying about the underlying database implementation.
+
 ```.py
     def search(self,query:str, multiple=False):
         results = self.cursor.execute(query)
@@ -153,6 +159,8 @@ class DatabaseWorker:
             return results.fetchall()#return multiple rows
         return results.fetchone() #return a single value
 ```
+The code above is an example of a function that is used many times throughout the code. By creating such function we can concisely and efficiently write code which is both helpful for myself as well as other developers that may view the code in the future.
+
 ## Registration
 ```.py
 sql_query = "SELECT uname from users"
@@ -167,6 +175,8 @@ sql_query = "SELECT uname from users"
         x.run_query(sql)
         self.parent.current = "LoginPage"
 ```
+The code above first checks The code above allows us to prevent the creation of multiple accounts with the same name. This is troublesum as we have orders placed for specific account holders and if we have multiple people with the same name there could be orders that are misplaced or payments that are not fullfiled.
+
 ## Logining In
 ```.py
 for result in results:
