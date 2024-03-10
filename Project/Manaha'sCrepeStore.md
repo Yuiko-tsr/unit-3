@@ -216,15 +216,18 @@ def on_pre_enter(self, *args):
     self.add_widget(self.data_table)
     self.update()
 ```
+In KivyMD, the on_pre_enter method is used to define what has to happen before a screen appears. In this instance, the procedure generates an MDDataTable object, a table-formatting widget. To specify the size and placement of the table, the usage of pagination, whether checkboxes will be displayed, and the sizes of the column headings, the MDDataTable is configured using particular characteristics such as size_hint, pos_hint, use_pagination, check, and column_data. The add_widget function is then used to add the MDDataTable object to the active screen by adding a child widget. Lastly, the newly inserted widget is updated on the screen by calling the update function.
+
+A table of a list of menus might be displayed using this code, making it simple for users to add and remove menus. A on_pre_enter function that runs before to the showing of a screen. A MDDataTable widget with particular column data and bindings for row and check presses is created by this function. The update method is invoked once the widget is placed on the screen in order to add data to the table. In addition, the size of each column must be determined so that the client can easily understand all of the data. One of the main features of the program would be the MDDataTable widget's user-friendly design, which would allow all housemates, regardless of technical proficiency, to use it efficiently.
+
 ## Order Crepe
 ```.py
-    def order(self):
-
-        time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Format the current time as a string
-        sql = f"INSERT INTO CustomerOrder(customer_name, crepe_type, type, date, toppings,fee) VALUES ('{self.username}', '{Order_Crepe.crepetype}', 0, '{time}', '{self.text_toppings}','{self.ids.price.text}')"
-        sql2 = f"INSERT INTO Budget(date, type, customer_name, amount) values('{time}','sells','{self.username}',{self.ids.price.text})"
-        x.run_query(sql)
-        x.run_query(sql2)
+def order(self):
+    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Format the current time as a string
+    sql = f"INSERT INTO CustomerOrder(customer_name, crepe_type, type, date, toppings,fee) VALUES ('{self.username}', '{Order_Crepe.crepetype}', 0, '{time}', '{self.text_toppings}','{self.ids.price.text}')"
+    sql2 = f"INSERT INTO Budget(date, type, customer_name, amount) values('{time}','sells','{self.username}',{self.ids.price.text})"
+    x.run_query(sql)
+    x.run_query(sql2)
 ```
 
 ## Make Crepe
