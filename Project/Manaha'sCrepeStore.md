@@ -1,4 +1,4 @@
-Unit 3: Crepe Store Application
+# Unit 3: Crepe Store Application
 
 ![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9bd84c70-c4af-4120-afaf-908a319c227f)
 
