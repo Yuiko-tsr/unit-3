@@ -43,7 +43,20 @@ The system diagram gives a visual depiction of the system, its components, and t
 The purpose of this wireframe diagram is to give users a visual depiction of the application's layout and structure, or user interface design. The wireframe also illustrates how different buttons will access different screens. The arrows that extend from the button to the screen allow the user to see which screen will open when they press and release the button.
 
 ## Flowchart
-**Fig** flowchart
+<img width="527" alt="Screen Shot 2024-03-10 at 9 29 28" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d0a1e969-11f1-4d5b-a71c-8f92dbaed1b4">
+
+**Fig** flowchart of sign in page
+The Python code defines a class SignInPage_Customer, which inherits from MDScreen. Within this class, there's a method called try_signin(). This method extracts user input for username, email, passwords, and security information. It then checks if the two passwords provided match, and displays an error message if they don't. Then it goes to the database to check if the username already exists, displaying an error message if it does. If the username is unique and the passwords match, it inserts the user data into the database and navigates to the login page.
+
+<img width="456" alt="Screen Shot 2024-03-10 at 9 37 59" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5b8fc8ad-44b4-4e76-a0ab-f45567a93c41">
+
+**Fig** flowchart of make crepe page
+The  Python code defines a class called MakeCrepe which inherits from MDScreen. Within this class, there's a method named try_create(). This method first checks if a crepe type has been chosen; if not, it displays an error message. If a crepe type is chosen, it updates the database to mark the order as in progress. Then, it asks the database to retrieve the ingredients required for the chosen crepe type, updates the resource quantities in the database by deducting the used quantities, and finally, it navigates to the "Crepe_Made" screen while resetting various variables.
+
+<img width="374" alt="Screen Shot 2024-03-10 at 9 44 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3e5f6f94-6e86-4a88-819a-e7b4b2196789">
+
+**Fig** flowchart of budget page
+The Python code defines a class called Budget that inherits from MDScreen. Within this class, there's a method named show_alert_dialog(). This method retrieves the total amount of sells and spendings from a database table named "Budget", calculates the total profit, and then displays this information in an alert dialog box. If the dialog box doesn't exist, it creates and opens it.
 
 ## ER Diagram
 <img width="900" alt="Screen Shot 2024-03-10 at 9 22 12" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3b7d45ee-8d00-4138-95ab-433320bfaaee">
