@@ -1,4 +1,4 @@
-# Unit 3: Crepe Store Application
+![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/260c04fd-8909-4e2b-b9b1-cb432483d64a)# Unit 3: Crepe Store Application
 
 ![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9bd84c70-c4af-4120-afaf-908a319c227f)
 
@@ -123,6 +123,7 @@ This UML diagram for the OOP classes illustrates the classes and methods utilize
 4. Algorithm Design
 
 ## Python file: "Login_Sign_in.py"
+## Setting up the file
 ```.py
 from kivy.core.window import Window
 from kivymd.uix.menu import MDDropdownMenu
@@ -135,6 +136,89 @@ from kivymd.uix.dialog import MDDialog
 from dateutil.relativedelta import relativedelta
 ```
 The code imports several libraries that will be used to build the Crepe Store application. 
+
+## DatabaseWorker
+```.py
+class DatabaseWorker:
+    def __init__(self, name:str):
+        self.name_db = name
+        #Step 1: create a connection to the file
+        self.connection = sqlite3.connect(self.name_db)
+        self.cursor = self.connection.cursor()
+```
+```.py
+    def search(self,query:str, multiple=False):
+        results = self.cursor.execute(query)
+        if multiple:
+            return results.fetchall()#return multiple rows
+        return results.fetchone() #return a single value
+```
+## Registration
+```.py
+sql_query = "SELECT uname from users"
+        results = x.search(query=sql_query, multiple=True)
+
+        for r in results:
+            if username == r[0]:
+                self.ids.success.text = "Username taken. Please choose another username"
+                return
+
+        sql = f"INSERT into users (uname, uemail, upass) values('{username}','{email}','{password1}')"
+        x.run_query(sql)
+        self.parent.current = "LoginPage"
+```
+## Logining In
+```.py
+for result in results:
+    if username == result[0] or username == result[1] and password == result[2]:
+        self.parent.current = "Home_Client"
+        return
+```
+## Table
+```.py
+def on_pre_enter(self, *args):
+    # [(names, size)] List of tuples
+    column_names = [('id', 35),
+                    ('Customer name', 40),
+                    ('Crepe type', 25),
+                    ('type',25),
+                    ('date', 40),
+                    ('Toppings', 60),
+                    ('Fee',25)]
+
+    self.data_table = MDDataTable(
+        size_hint=(.8, .5),
+        pos_hint={'center_x': .5, 'top': .8},
+        use_pagination=True,
+        check=True,
+        background_color_cell='#ff000',
+        column_data=column_names
+    )
+    self.add_widget(self.data_table)
+    self.update()
+```
+## Order Crepe
+```.py
+    def order(self):
+
+        time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Format the current time as a string
+        sql = f"INSERT INTO CustomerOrder(customer_name, crepe_type, type, date, toppings,fee) VALUES ('{self.username}', '{Order_Crepe.crepetype}', 0, '{time}', '{self.text_toppings}','{self.ids.price.text}')"
+        sql2 = f"INSERT INTO Budget(date, type, customer_name, amount) values('{time}','sells','{self.username}',{self.ids.price.text})"
+        x.run_query(sql)
+        x.run_query(sql2)
+```
+
+## Make Crepe
+```.py
+def on_pre_enter(self):
+    if CheckOrder.item_selected is not None:
+        self.ordered_crepe = CheckOrder.item_selected[2]
+        self.ordered_toppings = CheckOrder.item_selected[5]
+        self.customer = CheckOrder.item_selected[1]
+        self.ids.order.text = f"{self.ordered_crepe} with {self.ordered_toppings} for {self.customer}"
+    else:
+        self.ids.order.text = "No specific order taken"
+```
 
 ## Kivy file: "Login_Sign_in.kv"
 ## Screen Manager
