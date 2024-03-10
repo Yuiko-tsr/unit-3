@@ -46,7 +46,7 @@ The purpose of this wireframe diagram is to give users a visual depiction of the
 **Fig** flowchart
 
 ## ER Diagram
-<img width="691" alt="Screen Shot 2024-02-16 at 15 09 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/8785b67c-a7e6-49e0-a1e3-7c01d498c9d8">
+<img width="900" alt="Screen Shot 2024-03-10 at 9 22 12" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3b7d45ee-8d00-4138-95ab-433320bfaaee">
 
 **Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
 
