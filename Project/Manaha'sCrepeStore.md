@@ -135,6 +135,92 @@ from dateutil.relativedelta import relativedelta
 The code imports several libraries that will be used to build the Crepe Store application. 
 
 ## Kivy file: "Login_Sign_in.kv"
+## Screen Manager
+```,py
+ScreenManager:
+    CustomerClientPage:
+        name: "CustomerClientPage"
+    Check_Ingredients:
+        name:"Check_Ingredients"
+    Home_Client:
+        name: "Home_Client"
+    Home_Customer:
+        name: "Home_Customer"
+    Check_Past_Orders:
+        name: "Check_Past_Orders"
+    Ordered:
+        name: "Ordered"
+    Order_Crepe:
+        name:"Order_Crepe"
+    LoginPage:
+        name:"LoginPage"
+    SignInPage_Client:
+        name: "SignInPage_Client"
+    SignInPage_Customer:
+        name: "SignInPage_Customer"
+    ForgotPassword_Client:
+        name:"ForgotPassword_Client"
+    ForgotPassword_Customer:
+        name:"ForgotPassword_Customer"
+    ChangePassword_Client:
+        name:"ChangePassword_Client"
+    ChangePassword_Customer:
+        name:"ChangePassword_Customer"
+    Crepe_Made:
+        name:"Crepe_Made"
+    Check_Budget:
+        name:"Check_Budget"
+    Order_Ingredients:
+        name:"Order_Ingredients"
+    Order_crepe:
+        name:"Order_crepe"
+    CheckOrder:
+        name:"CheckOrder"
+    Make_Menu:
+        name: "Make_Menu"
+    Created:
+        name:"Created"
+    Menu_List:
+        name:"Menu_List"
+    MakeCrepe:
+        name: "MakeCrepe"
+    Ordered_Crepe:
+        name:"Ordered_Crepe"
+```
+The Screen Manger provides a simple and efficient way to organize and switch between different screens in an application. Here we see the long list but by moving the order around we can easily access screens of our choice in the development process without taking all the steps necessary to reach that point in the actual demonstration. Each screenis defined using a custom class that inherits from the Screen class, which allows for custom attributes and functionality to be defined for each screen. Abstraction was used to make the process of managing different screens and easily switch between them easier for me. 
+
+## Encrypting Paswword
+```.py
+MDTextField:
+  hint_text: "Enter password: "
+  font_size: "15 pt"
+  id: password_field
+  password: True
+```
+Here the code creates an MDTextField widget that allows users to input text. The MDTextField is defined with an ID of "password_field" and several attributes such as hint_text, font_size, and password. In this MDTextField we see that the password variable is set to "True". This encrypts the input and provides security and privacy for the users trying to input their password.
+
+## MDBoxLayout
+```.py
+MDBoxLayout:
+    pos_hint:{"center_x":0.5, "center_y":0.5}
+    size_hint: 0.45, 0.2
+    orientation: "horizontal"
+
+    MDRaisedButton:
+        text: "Login"
+        style: "standard"
+        md_bg_color: "orange"
+        on_press:
+            root.try_login()
+
+    MDRaisedButton:
+        text: "Sign In"
+        style: "standard"
+        md_bg_color: "red"
+        on_press:
+            root.parent.current = "SignInPage_Client"
+```
+The MDBoxLayout allows us to organize the design of the screen more easily by letting us align certain objects "vertically" or horizontally". This way we can more easily organize the screen for a more simple and accessible design for the users and client. 
 
 # Criteria D: Functionality
 ## The drive to the video:
