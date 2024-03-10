@@ -64,7 +64,10 @@ The Python code defines a class called Budget that inherits from MDScreen. Withi
 **Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
 
 ## UML Diagram
+<img width="631" alt="Screen Shot 2024-03-10 at 10 22 34" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/cfe16a8a-68b1-4290-b00f-72f478d6c50c">
+
 **Fig** UML diagram
+This UML diagram for the OOP classes illustrates the classes and methods utilized during the development of the application. It showcases two primary parent classes, namely MDApp and MDScreen. All the classes inherit the methods and attributes of these parent classes, which is demonstrated by the arrows displayed on the diagram.
 
 ## Test Plan
 
