@@ -220,16 +220,6 @@ In KivyMD, the on_pre_enter method is used to define what has to happen before a
 
 A table of a list of menus might be displayed using this code, making it simple for users to add and remove menus. A on_pre_enter function that runs before to the showing of a screen. A MDDataTable widget with particular column data and bindings for row and check presses is created by this function. The update method is invoked once the widget is placed on the screen in order to add data to the table. In addition, the size of each column must be determined so that the client can easily understand all of the data. One of the main features of the program would be the MDDataTable widget's user-friendly design, which would allow all housemates, regardless of technical proficiency, to use it efficiently.
 
-## Order Crepe
-```.py
-def order(self):
-    time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Format the current time as a string
-    sql = f"INSERT INTO CustomerOrder(customer_name, crepe_type, type, date, toppings,fee) VALUES ('{self.username}', '{Order_Crepe.crepetype}', 0, '{time}', '{self.text_toppings}','{self.ids.price.text}')"
-    sql2 = f"INSERT INTO Budget(date, type, customer_name, amount) values('{time}','sells','{self.username}',{self.ids.price.text})"
-    x.run_query(sql)
-    x.run_query(sql2)
-```
-
 ## Make Crepe
 ```.py
 def on_pre_enter(self):
@@ -241,6 +231,9 @@ def on_pre_enter(self):
     else:
         self.ids.order.text = "No specific order taken"
 ```
+The code above is a function called on_pre_enter which checks if there is a selected item in an order list, indicated by CheckOrder.item_selected. If an item is selected (CheckOrder.item_selected is not None), it extracts specific information related to the order: the type of crepe (self.ordered_crepe), the toppings chosen (self.ordered_toppings), and the customer's name (self.customer). These values are obtained from specific indices of the CheckOrder.item_selected list, possibly indicating that it's a list of order details. Then, the extracted information is used to update the text displayed on a UI element referenced by self.ids.order.text. The text is formatted to include the type of crepe, toppings, and the customer's name, providing a clear representation of the order. In the scenario where no item is selected (else clause), it updates the UI element to display a default message stating "No specific order taken". This likely serves as a placeholder or informative message when no order details are available.
+
+This code allows the user to not misinterpret orderes that they took for other orders as the function displays the exact order onto the screen which helps the user identify which crepe and toppings were ordered from who. Since the client expressed their concern for misplaced/unfulfilled orders, by allowing the user to identify such information will lead to a more efficient, easy and accessible way to prevent such concerns from happening in this application.
 
 ## Kivy file: "Login_Sign_in.kv"
 ## Screen Manager
