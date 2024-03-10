@@ -2,6 +2,8 @@
 
 ![image](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9bd84c70-c4af-4120-afaf-908a319c227f)
 
+**FIG. 1** Image of crepe store
+
 # Criteria A: Planning
 
 ## Problem definition
@@ -35,40 +37,40 @@ Lastly, the main programming language that will be used in this project is Pytho
 ## System Diagram
 <img width="850" alt="Screen Shot 2024-03-09 at 15 53 40" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/df09bf01-a5fb-403e-ad8d-002dc059363f">
 
-**Fig** System Diagram
+**FIG. 2** System Diagram
 The system diagram gives a visual depiction of the system, its components, and their relationships. This shows the keyboard as the input and the output (different systems used in this project), such as the Python and KivyMD versions of the programming language, the module and database, the processor, version, and memory of the computer, and the output screen (computer screen application).
 
 ## Wireframe Sketches
 <img width="661" alt="Screen Shot 2024-03-09 at 15 53 24" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d46b5e69-932d-4922-91ee-457c535ab76c">
 
-**Fig** Sketches
+**FIG. 3** Sketches
 The purpose of this wireframe diagram is to give users a visual depiction of the application's layout and structure, or user interface design. The wireframe also illustrates how different buttons will access different screens. The arrows that extend from the button to the screen allow the user to see which screen will open when they press and release the button.
 
 ## Flowchart
 <img width="527" alt="Screen Shot 2024-03-10 at 9 29 28" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d0a1e969-11f1-4d5b-a71c-8f92dbaed1b4">
 
-**Fig** flowchart of sign in page
+**FIG. 4** flowchart of sign in page
 The Python code defines a class SignInPage_Customer, which inherits from MDScreen. Within this class, there's a method called try_signin(). This method extracts user input for username, email, passwords, and security information. It then checks if the two passwords provided match, and displays an error message if they don't. Then it goes to the database to check if the username already exists, displaying an error message if it does. If the username is unique and the passwords match, it inserts the user data into the database and navigates to the login page.
 
 <img width="456" alt="Screen Shot 2024-03-10 at 9 37 59" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/5b8fc8ad-44b4-4e76-a0ab-f45567a93c41">
 
-**Fig** flowchart of make crepe page
+**FIG. 5** flowchart of make crepe page
 The  Python code defines a class called MakeCrepe which inherits from MDScreen. Within this class, there's a method named try_create(). This method first checks if a crepe type has been chosen; if not, it displays an error message. If a crepe type is chosen, it updates the database to mark the order as in progress. Then, it asks the database to retrieve the ingredients required for the chosen crepe type, updates the resource quantities in the database by deducting the used quantities, and finally, it navigates to the "Crepe_Made" screen while resetting various variables.
 
 <img width="374" alt="Screen Shot 2024-03-10 at 9 44 20" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3e5f6f94-6e86-4a88-819a-e7b4b2196789">
 
-**Fig** flowchart of budget page
+**FIG. 6** flowchart of budget page
 The Python code defines a class called Budget that inherits from MDScreen. Within this class, there's a method named show_alert_dialog(). This method retrieves the total amount of sells and spendings from a database table named "Budget", calculates the total profit, and then displays this information in an alert dialog box. If the dialog box doesn't exist, it creates and opens it.
 
 ## ER Diagram
 <img width="900" alt="Screen Shot 2024-03-10 at 9 22 12" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/3b7d45ee-8d00-4138-95ab-433320bfaaee">
 
-**Fig** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
+**FIG. 7** ER Diagram showing the architecture of the proposed solution. The relationship between the customer table and orders are a one to many relationship and the relationship between orders and resources are a many to many function with an extra table of contains that identify which order uses which resources. 
 
 ## UML Diagram
 <img width="631" alt="Screen Shot 2024-03-10 at 10 22 34" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/cfe16a8a-68b1-4290-b00f-72f478d6c50c">
 
-**Fig** UML diagram
+**FIG. 8** UML diagram
 This UML diagram for the OOP classes illustrates the classes and methods utilized during the development of the application. It showcases two primary parent classes, namely MDApp and MDScreen. All the classes inherit the methods and attributes of these parent classes, which is demonstrated by the arrows displayed on the diagram.
 
 ## Test Plan
@@ -331,5 +333,5 @@ https://drive.google.com/file/d/1yNZ_OLSauYll88BlrTTrPy_8v25bbMe_/view?usp=shari
 
 ![IMG_5F4D6C5EA6A5-1](https://github.com/Yuiko-tsr/unit-3/assets/134657923/9853dab7-5639-4b18-84a0-9289ec571e91)
 
-**FIG** Meeting Notes from First Meeting 
+**FIG. 9** Meeting Notes from First Meeting 
 (Includes Problem and requirements)
