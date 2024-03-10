@@ -72,7 +72,26 @@ This UML diagram for the OOP classes illustrates the classes and methods utilize
 ## Test Plan
 
 ## Record of Tasks
-**Fig** RoT
+| Tast No. | Planned Action                                                               | Design cycle | Time Estimate | Completion Date | Criterion |
+|----------|------------------------------------------------------------------------------|--------------|---------------|-----------------|-----------|
+| 1        | Talk with Manaha about her crepe company (issues, expectations, requirement) | Planning     | 30 min        | 25th Feb        | A         |
+| 2        | Talk with Manaha about the success criteria                                  | Planning     | 15 min        | 28th Feb        | A         |
+| 3        | Research and develop a rationale for solution                                | Planning     | 30 min        | 29th Feb        | A         |
+|          | Create system diagram, ER diagram and wireframe                              | Design       | 2 hours       | 1 March         | B         |
+|          | Meet with client about the Wireframe                                         | Planning     | 15 min        | 1 March         | A         |
+|          | Develop login and signin secreen                                             | Development  | 1 hour        | 2 March         | C         |
+|          | develop forgot password and change password screens                          | Development  | 1 hour        | 3 March         | C         |
+|          | develop home button for both the client and customer                         | Development  | 30 min        | 4 March         | C         |
+|          | develop the check order page                                                 | Development  | 2 hours       | 5 March         | C         |
+|          | develop the make menu page                                                   | Development  | 1 hour        | 6 March         | C         |
+|          | develop the budget and menu list pages                                       | Development  | 2.5 hours     | 7 March         | C         |
+|          | develop customer's pages                                                     | Development  | 2 hours       | 8 March         | C         |
+|          | Complete the dropdown menu and inventory                                     | Development  | 2 hours       | 9 March         | C         |
+|          | Complet repository for Criteria B                                            | Design       | 2 hours       | 9 March         | B         |
+|          | Take a video demonstration of all success criteria operating                 | Evaluation   | 1 hour        | 9 March         | D         |
+|          | Meet with Client about the functionality                                     | Planning     | 15 min        | 10 March        | A         |
+|          | Testing to make sure the functionality is working                            | Planning     | 2 hours       | 10 March        | A         |
+|          | Write the code descriptions as well as the specific techniques used          | Evaluation   | 1 hour        | 10 March        | C         |
 
 # Criteria C: Development
 ## Techniques used
