@@ -116,7 +116,7 @@ print(test2.get_pal_list())
 
 <img width="424" alt="Screen Shot 2024-02-29 at 13 48 18" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/d13e3487-c04a-4df2-a7c8-3c65a027ec5c">
 
-# Quiz 052
+# Quiz 054
 ## Question
 ## Answer
 ```.py
@@ -142,3 +142,44 @@ print(text.pour(n=3))
 ## UML Diagram/EE Diagram
 
 <img width="443" alt="Screen Shot 2024-02-29 at 13 49 02" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/f895dd0d-b4c6-4d88-afc4-461af1d74a64">
+
+# Quiz 055
+## Question
+## Answer
+```py
+class Darts():
+    def __init__(self, outer, middle, inner):
+        self.outer = outer
+        self.middle = middle
+        self.inner = inner
+    def calculate(self, x, y):
+        coordinate = (y**2 + x**2)**0.5
+        if coordinate <= self.inner:
+            return 10
+        elif coordinate <= self.middle:
+            return 5
+        elif coordinate <= self.outer:
+            return 1
+        else:
+            return 0
+
+test = Darts(1,5,10)
+print(test.calculate(0,0))
+
+```
+## Code Running
+<img width="374" alt="Screen Shot 2024-04-01 at 20 37 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/312ec860-ab05-4397-b981-84647c06e76e">
+
+## UML Diagram/EE Diagram
+
+# Quiz 057
+## Question
+## Answer
+## Code Running
+## UML Diagram/EE Diagram
+
+# Quiz 058
+## Question
+## Answer
+## Code Running
+## UML Diagram/EE Diagram
