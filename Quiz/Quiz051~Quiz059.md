@@ -34,6 +34,8 @@ def print_object_info(object):
 <img width="1407" alt="Screen Shot 2024-04-01 at 20 33 28" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/1aa56e46-d7fa-445b-9991-a2974d10e46f">
 
 ## UML Diagram/EE Diagram
+<img width="620" alt="Screen Shot 2024-04-01 at 21 44 21" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/f70b7b86-a3dd-48ec-a8f7-d9dd8f11f957">
+
 
 # Quiz 052
 ## Question
@@ -69,6 +71,7 @@ print(test.get_rotation())
 <img width="1313" alt="Screen Shot 2024-04-01 at 20 34 14" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/690847f8-42a1-4a4d-bc1e-6f83ea7d4644">
 
 ## UML Diagram/EE Diagram
+<img width="605" alt="Screen Shot 2024-04-01 at 21 45 51" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/923edb47-506a-4b86-8a85-4e6fa85bbc09">
 
 # Quiz053
 ## Question
@@ -171,6 +174,7 @@ print(test.calculate(0,0))
 <img width="374" alt="Screen Shot 2024-04-01 at 20 37 50" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/312ec860-ab05-4397-b981-84647c06e76e">
 
 ## UML Diagram/EE Diagram
+<img width="308" alt="Screen Shot 2024-04-01 at 21 46 28" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/b9934d86-f5d3-44ef-9b4a-bf683e8f523c">
 
 # Quiz 057
 ## Question
