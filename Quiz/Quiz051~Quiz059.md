@@ -175,11 +175,10 @@ print(test.calculate(0,0))
 # Quiz 057
 ## Question
 ## Answer
-## Code Running
-## UML Diagram/EE Diagram
+<img width="468" alt="Screen Shot 2024-04-01 at 20 54 29" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/e7d6ab46-a0b2-4286-8035-f976c09d0231">
 
 # Quiz 058
 ## Question
 ## Answer
-## Code Running
-## UML Diagram/EE Diagram
+<img width="470" alt="Screen Shot 2024-04-01 at 20 54 51" src="https://github.com/Yuiko-tsr/unit-3/assets/134657923/80d5c788-bf4a-4c58-8a0c-7e0de4020c92">
+
